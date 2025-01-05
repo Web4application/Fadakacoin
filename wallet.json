@@ -664,6 +664,6 @@
       "address" : "0xb99925EA17c3780e8B96B4254b911364434Be7cc"
     }
   ],
-  "name" : "Kubucoin ",
-  "type" : "mnemonic"
+  "name" : "web4",
+  "type" : "wallet asset"
 }
