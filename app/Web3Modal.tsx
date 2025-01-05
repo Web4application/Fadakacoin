@@ -38,8 +38,8 @@ const ethersConfig = defaultConfig({
   defaultChainId: 1, // used for the Coinbase SDK
 })
 
-// 5. Create a Web3Modal instance
-createWeb3Modal({
+// 5. Create a Web4Modal instance
+createWeb4Modal({
   ethersConfig,
   chains: [mainnet],
   projectId,
