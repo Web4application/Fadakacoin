@@ -1,3 +1,5 @@
+[![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/Web4application/web4asset/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/Web4application/web4asset/actions/workflows/jekyll-gh-pages.yml)
+
 # Web4asset
 
 Web4asset is a blockchain-based project designed to develop and manage digital assets. This project includes smart contracts, wallet management, and web application integration to create a comprehensive solution for handling digital assets.
