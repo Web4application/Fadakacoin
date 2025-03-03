@@ -1,9 +1,8 @@
-const axios = require('axios');
+import axios from 'axios';
 
-async function getCryptoPrice(crypto) {
-    const response = await axios.get(`https://api.coingecko.com/api/v3/simple/price?ids=${crypto}&vs_currencies=usd`);
-    console.log(`Price of ${crypto}: $${response.data[crypto].usd}`);
-}
+const API_URL = 'https://api.example.com/items';
 
-// Example usage
-getCryptoPrice('bitcoin');
+export const fetchItems = async () => {
+    const response = await axios.get(API_URL);
+    return response.data;
+};
