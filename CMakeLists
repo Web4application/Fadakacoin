@@ -14,7 +14,7 @@ find_package(OpenSSL REQUIRED)
 include_directories(${OATPP_INCLUDE_DIRS} ${OPENSSL_INCLUDE_DIR})
 
 # Add the executable
-add_executable(Web4asset main.cpp)
+add_executable(fadaka main.cpp)
 
 # Link libraries
-target_link_libraries(Web4asset ${OATPP_LIBRARIES} ${OPENSSL_LIBRARIES})
+target_link_libraries(fadaka ${OATPP_LIBRARIES} ${OPENSSL_LIBRARIES})
