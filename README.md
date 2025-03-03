@@ -1,8 +1,8 @@
 [![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/Web4application/web4asset/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/Web4application/web4asset/actions/workflows/jekyll-gh-pages.yml)
 
-# Web4asset
+# FADAKA
 
-Web4asset is a blockchain-based project designed to develop and manage digital assets. This project includes smart contracts, wallet management, and web application integration to create a comprehensive solution for handling digital assets.
+fadaka is a blockchain-based project designed to develop and manage digital assets. This project includes smart contracts, wallet management, and web application integration to create a comprehensive solution for handling digital assets.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Web4asset is a blockchain-based project designed to develop and manage digital a
 
 ## Introduction
 
-Web4asset aims to provide a secure and user-friendly platform for managing digital assets on the blockchain. By leveraging technologies like Next.js and Node.js, the project offers a seamless experience for users to interact with the blockchain.
+fadaka aims to provide a secure and user-friendly platform for managing digital assets on the blockchain. By leveraging technologies like Next.js and Node.js, the project offers a seamless experience for users to interact with the blockchain.
 
 ## Features
 
@@ -27,7 +27,7 @@ Web4asset aims to provide a secure and user-friendly platform for managing digit
 
 ## Installation
 
-To get started with Web4asset, follow these steps:
+To get started with fadaka, follow these steps:
 
 1. **Clone the repository**:
    ```bash
