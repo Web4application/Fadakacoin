@@ -1,9 +1,9 @@
 // tokenomics/smart-contract.sol
 pragma solidity ^0.8.0;
 
-contract Web4assetToken {
-    string public name = "Web4asset Token";
-    string public symbol = "W4A";
+contract FadakaToken {
+    string public name = "Fadaka Token";
+    string public symbol = "FDK";
     uint8 public decimals = 18;
     uint256 public totalSupply = 10000000000 * (10 ** uint256(decimals));
 
