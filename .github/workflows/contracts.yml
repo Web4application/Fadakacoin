@@ -1,0 +1,29 @@
+# .github/workflows/contracts.yml
+name: Smart Contract CI
+
+on:
+  push:
+    paths:
+      - 'contracts/**'
+  pull_request:
+    paths:
+      - 'contracts/**'
+
+jobs:
+  test-contracts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Hardhat and dependencies
+        run: npm install
+        working-directory: contracts
+
+      - name: Run contract tests
+        run: npx hardhat test
+        working-directory: contracts
