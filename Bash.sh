@@ -10,3 +10,6 @@ npm install
 
 cd frontend
 npm install
+
+pip install fastapi uvicorn
+uvicorn backend:app --reload
