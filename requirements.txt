@@ -1,6 +1,6 @@
 flask==2.3.3
 requests==2.32.4
-pandas==1.5.3
+pandas==2.3.1
 numpy==2.3.1
 sqlalchemy==1.4.54
 pytest==8.4.1
