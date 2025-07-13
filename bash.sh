@@ -17,3 +17,6 @@ uvicorn backend:app --reload
 $ npm install
 $ npm run dev
 $ npm create vite@latest vanilla-ts-6963 -- --template vanilla-ts
+
+$ npx hardhat run scripts/deploy.js
+--network <fadakacoin>
