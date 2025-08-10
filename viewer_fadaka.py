@@ -2,11 +2,11 @@
 import os, time, streamlit as st, pandas as pd
 from web3 import Web3
 
-RPC_URL = os.getenv("FADAKA_RPC", "http://localhost:8545")
-CONTRACT_ADDR = Web3.to_checksum_address("0xb99925ea17c3780e8b96b4254b911364434be7cc")
+RPC_URL = os.getenv("FADAKA_RPC", "http://localhost:8545", "https://rpc.blocknative.com/boost")
+CONTRACT_ADDR = Web3.to_checksum_address("2AQA9WWSFDT67BQ4335B563BNP9HGJ34F6")
 
 # 1. Web3 connection
-w3 = Web3(Web3.HTTPProvider(RPC_URL))
+w3 = Web3(Web3.HTTPProvider((RPC_URL))
 assert w3.is_connected(), "Cannot reach Fadaka RPC"
 
 # 2. Minimal ABI with just TransferSingle / Batch
