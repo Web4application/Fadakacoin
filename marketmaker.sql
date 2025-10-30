@@ -237,10 +237,10 @@ CREATE TABLE `user_accounts` (
 -- Table structure for table `zano_assets`
 --
 
-DROP TABLE IF EXISTS `zano_assets`;
+DROP TABLE IF EXISTS `fadaka_assets`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `zano_assets` (
+CREATE TABLE `fadaka_assets` (
   `asset_id` varchar(128) NOT NULL,
   `current_supply` bigint(20) unsigned DEFAULT NULL,
   `decimals` int(11) DEFAULT NULL,
@@ -260,10 +260,10 @@ CREATE TABLE `zano_assets` (
 -- Table structure for table `zano_price_history`
 --
 
-DROP TABLE IF EXISTS `zano_price_history`;
+DROP TABLE IF EXISTS `fadaka_price_history`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `zano_price_history` (
+CREATE TABLE `fadaka_price_history` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `timestamp` timestamp NULL DEFAULT NULL,
   `USDT_price` decimal(16,6) DEFAULT NULL,
@@ -275,10 +275,10 @@ CREATE TABLE `zano_price_history` (
 -- Table structure for table `zano_wallet_balance`
 --
 
-DROP TABLE IF EXISTS `zano_wallet_balance`;
+DROP TABLE IF EXISTS `fadaka_wallet_balance`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `zano_wallet_balance` (
+CREATE TABLE `fadaka_wallet_balance` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `timestamp` timestamp NULL DEFAULT NULL,
   `asset_id` varchar(128) DEFAULT NULL,
@@ -288,8 +288,8 @@ CREATE TABLE `zano_wallet_balance` (
   `total` bigint(20) DEFAULT NULL,
   `unlocked` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `zano_wallet_balance_asset_id_index` (`asset_id`),
-  KEY `zano_wallet_balance_asset_id_timestamp_index` (`asset_id`,`timestamp`)
+  KEY `fadaka_wallet_balance_asset_id_index` (`asset_id`),
+  KEY `fadaka_wallet_balance_asset_id_timestamp_index` (`asset_id`,`timestamp`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2489 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -297,10 +297,10 @@ CREATE TABLE `zano_wallet_balance` (
 -- Table structure for table `zano_wallet_transactions`
 --
 
-DROP TABLE IF EXISTS `zano_wallet_transactions`;
+DROP TABLE IF EXISTS `fadaka_wallet_transactions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `zano_wallet_transactions` (
+CREATE TABLE `fadaka_wallet_transactions` (
   `txid` varchar(128) NOT NULL,
   `wallet_ident` varchar(128) NOT NULL,
   `tx_index` bigint(20) DEFAULT NULL,
@@ -321,7 +321,7 @@ CREATE TABLE `zano_wallet_transactions` (
   `timestamp` timestamp NULL DEFAULT NULL,
   `unlock_time` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`txid`,`vout`,`wallet_ident`),
-  KEY `zano_wallet_transactions_timestamp_index` (`timestamp`)
+  KEY `fadaka_wallet_transactions_timestamp_index` (`timestamp`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -329,10 +329,10 @@ CREATE TABLE `zano_wallet_transactions` (
 -- Table structure for table `zano_wallets`
 --
 
-DROP TABLE IF EXISTS `zano_wallets`;
+DROP TABLE IF EXISTS `fadaka_wallets`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `zano_wallets` (
+CREATE TABLE `fadaka_wallets` (
   `ident` varchar(128) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
