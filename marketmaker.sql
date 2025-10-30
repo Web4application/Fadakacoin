@@ -257,7 +257,7 @@ CREATE TABLE `fadaka_assets` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `zano_price_history`
+-- Table structure for table `fadska_price_history`
 --
 
 DROP TABLE IF EXISTS `fadaka_price_history`;
@@ -272,7 +272,7 @@ CREATE TABLE `fadaka_price_history` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `zano_wallet_balance`
+-- Table structure for table `fadaka_wallet_balance`
 --
 
 DROP TABLE IF EXISTS `fadaka_wallet_balance`;
@@ -294,7 +294,7 @@ CREATE TABLE `fadaka_wallet_balance` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `zano_wallet_transactions`
+-- Table structure for table `fadaka_wallet_transactions`
 --
 
 DROP TABLE IF EXISTS `fadaka_wallet_transactions`;
@@ -326,7 +326,7 @@ CREATE TABLE `fadaka_wallet_transactions` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `zano_wallets`
+-- Table structure for table `fadaka_wallets`
 --
 
 DROP TABLE IF EXISTS `fadaka_wallets`;
