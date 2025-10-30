@@ -1,3 +1,5 @@
+'''
+npm install -g ganache
  npm install --save-dev hardhat
 
  npx hardhat compile
@@ -37,13 +39,13 @@ git checkout -b renovate/fix-typechain-range
   fadaka:latest
 
 cd rodaai-backend
-uvicorn app.main:app --host 0.0.0.0 --port 7000
+uvicorn app.main:app --host 0.0.0.0 --port 8080
 # In a separate terminal, start local blockchain node
  npx hardhat node
- npx hardhat run scripts/deploy.js --network localhost
+ npx hardhat run scripts/deploy.js --network fadaka
 
 # Deploy contract to local node
-npx hardhat run scripts/deploy.js --network localhost
+npx hardhat run scripts/deploy.js --network fadaka
 npm run prepare
  npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox dotenv
  npm install @openzeppelin/contracts-upgradeable @openzeppelin/hardhat-upgrades
@@ -166,7 +168,7 @@ go build -ldflags="-s -w" -o build/geth ./cmd/geth
 GOFLAGS="-ldflags=-linkmode=external -extldflags=-O2" go build ...
 
 docker build -t geth-local .
-docker run -p 5000:5000 geth-local --http:localhost:8000
+docker run -p 50080:5001 geth-local --http:localhost:8080
 
 # Go to the project root
 cd fadaka_proxy_deployment/contracts
@@ -217,7 +219,9 @@ cd fadaka
 
 mkdir web4app-fadaka && cd web4app-fadaka
 mkdir assets
----
+'''
+
+```bash
 web4app-fadaka/
 ├── index.html
 ├── wallet.html
@@ -233,8 +237,8 @@ web4app-fadaka/
 └── assets/
     ├── style.css
     └── app.js
-
-cd your-fadaka-repo
+```
+cd fadakacoin & fadaka
 unzip ../fadaka-typechain-setup.zip
 cd contracts && rm Example.sol && rm -rf test # if you already have them
 cd ../ # back to root
