@@ -3,7 +3,7 @@ const p2pNetworking = require('./p2pNetworking');
 // Simple server setup for P2P network
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 50080;
 
 app.get('/', (req, res) => {
   res.send('Fadaka Blockchain P2P Network');
