@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+ #!/usr/bin/env bash
 
 	local MINER_VER=$CUSTOM_VER
 	[[ -z $MINER_VER ]] && MINER_VER=$MINER_LATEST_VER
