@@ -1,0 +1,9 @@
+if (ergoConnector) { // check if the Connection API is injected
+  if (ergoConnector.nautilus) { // check if the Nautilus Wallet is available
+    console.log("Nautilus is ready to use");
+  } else {
+    console.log("Nautilus is not available");
+  }
+} else {
+  console.log("No wallet available");
+}
