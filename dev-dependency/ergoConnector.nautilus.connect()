@@ -1,0 +1,7 @@
+const connected = await ergoConnector.nautilus.connect(); 
+
+if (connected) {
+  console.log("Connected!");
+} else {
+  console.log("Not connected!");
+}
