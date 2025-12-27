@@ -1,0 +1,9 @@
+const unsignedTransaction = new TransactionBuilder(currentHeight)
+  .from(inputs)
+  .to(new OutputBuilder(1000000n, recipientAddress))
+  .sendChangeTo(changeAddress)
+  .payMinFee()
+  .build()
+  .toEIP12Object();
+
+const signedTransaction = await ergo.sign_tx(unsignedTransaction); 
