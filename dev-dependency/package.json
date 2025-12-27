@@ -1,0 +1,8 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    // ...
+    // Add "@nautilus-js/eip12-types" to the types array
+    "types": ["@nautilus-js/eip12-types"]
+  }
+}
